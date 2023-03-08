@@ -1,0 +1,70 @@
+\newcommand{\thesistitle}{Thesis Title}
+\newcommand{\authorname}{Author Name}
+\newcommand{\authorinfo}{Author Info}
+\newcommand{\thesisdescription}{A thesis submitted in partial fulfilment of the requirements of the degree of Master of Philosophy/Doctor of Philosophy}
+\newcommand{\deptname}{Department Name}
+\newcommand{\univname}{The Hong Kong Polytechnic University}
+\newcommand{\supervisorname}{Title FirstName LastName}
+\newcommand{\yearofaward}{YYYY/YYYY}
+\newcommand{\submissiondate}{MM/YYYY}
+
+%% Functions
+
+\newcommand\printlogo{
+    \includegraphics[keepaspectratio=true, width=0.4\pdfpagewidth]{images/template/polyu_logo.png}
+}
+
+\newcommand\blankpage{
+    \null
+    \newpage}
+
+%% Cover Page
+
+\printlogo
+\begin{center}
+
+\vspace*{.1\textheight}
+{\LARGE \textbf{\MakeUppercase{\thesistitle}}\par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\LARGE \textbf{\MakeUppercase{\authorname}}\par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\LARGE \textbf{\authorinfo}\par}\vspace{0.5cm}
+
+\vspace*{.25\textheight}
+{\LARGE \textbf{\univname}\par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\LARGE \textbf{\MakeUppercase{\yearofaward}}\par}\vspace{0.5cm}
+
+\vfill
+\end{center}
+\afterpage{\blankpage}
+
+%% Title Page
+
+\printlogo
+\begin{center}
+
+\vspace*{.1\textheight}
+{\LARGE \univname \par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\LARGE \deptname \par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\LARGE \textbf{\thesistitle}\par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\large \authorname \par}\vspace{0.5cm}
+
+\vspace*{.2\textheight}
+{\large \thesisdescription \par}\vspace{0.5cm}
+
+\vspace*{.05\textheight}
+{\large \submissiondate \par}\vspace{0.5cm}
+
+\vfill
+\end{center}
+\afterpage{\blankpage}
