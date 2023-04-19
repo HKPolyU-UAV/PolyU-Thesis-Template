@@ -18,4 +18,27 @@ Use schemas or figures if necessary: they help a lot in understanding. If you ta
     \label{fig::example_picture}
 \end{figure}
 
+To include subfigures follow the following example:
+
+\begin{figure}[!htbp]
+    \begin{subfigure}{\textwidth}
+        \centering
+        \includegraphics[width=0.7\textwidth]{images/figures/example_figure.jpg}
+        \caption{Subfigure a.}
+        \label{fig::subfigure_a}
+    \end{subfigure}
+    \begin{subfigure}{\textwidth}
+        \centering
+	\includegraphics[width=0.7\textwidth]{images/figures/example_figure.jpg}
+        \caption{Subfigure b.}
+        \label{fig::subfigure_b}
+    \end{subfigure}
+    \caption{Example subfigures.}
+    \label{fig::subfigures}
+\end{figure}
+
+You can refer to by subfigures with the corresponding label such as: Figure \ref{fig::subfigure_a} and Figure \ref{fig::subfigure_b}.
+
 All acronyms should be defined in \textit{acronym.tex} and referred to with \textbackslash ac command. The first referred acronym will display the whole name such as \ac{ML}, and only abbreviations will be displayed afterwards such as \ac{ML}.
+
+You can also include url links with url command such as: \url{https://youtube.com}.

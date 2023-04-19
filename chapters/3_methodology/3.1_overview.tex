@@ -14,3 +14,18 @@ The aim of this thesis is to ...
 \end{table}
 
 We can see from Table~\ref{tab::table_template} that...
+
+An example of including equations is shown below:
+
+\begin{equation}
+	\label{eqn::example_label}
+        \left\{
+	\begin{aligned}
+		\dot{\mathbf{p}}&=\mathbf{v}\\
+		m\dot{\mathbf{v}}&=\mathbf{R}_\text{B}^\text{I}\mathbf{F}_\text{B}\\            \dot{\mathbf{R}}_\text{B}^\text{I}&=\mathbf{R}_\text{B}^\text{I}\boldsymbol{\omega}_{\times}\\
+            \mathbf{I}\dot{\boldsymbol{\omega}}&=-\boldsymbol{\omega}\times(\mathbf{I}\boldsymbol{\omega})+\mathbf{M}_\text{B},\\
+	\end{aligned}
+        \right.
+\end{equation}
+
+You can refer to the equation with ref command such as: \ref{eqn::example_label}.
