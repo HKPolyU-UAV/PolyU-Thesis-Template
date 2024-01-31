@@ -22,6 +22,9 @@
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \usepackage{multirow} 
 
+\usepackage{etoolbox}
+\preto\section\acresetall
+
 %% General Settings %%
 \onehalfspacing                 % Line spacing
 \graphicspath{{figures/}}       % Image settings
